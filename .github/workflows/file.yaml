@@ -29,7 +29,7 @@ jobs:
             username: ${{ secrets.LOGIN }}
             password: ${{ secrets.PASSWORD }}
             # Указываем, какие файлы копировать
-            source: "docker-compose-ci.yaml"
+            source: "docker-compose.yaml"
                       # Место на виртуальной машине, куда скопируются файлы
             target: "flask-app"
       - name: run docker-compose
