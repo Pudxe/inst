@@ -53,7 +53,6 @@ def page_post(path):
     try:
         result = get_post_by_pk(int(path))
 
-
         com = get_comments_by_post_id(int(path))
     except ValueError:
         return "Пост не найден"
